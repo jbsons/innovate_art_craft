@@ -2146,11 +2146,10 @@
     <script>
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-        // Huawei Phone must come first because its UA also contains "Android"
-        if (userAgent.includes("Android")) {
-            document.getElementById("smsshare").href = "sms:?body=This is my Digital Business Card: " + window.location.href;
-        } else (userAgent.includes("iPhone")) {
+        if (userAgent.includes("iPhone")) {
             document.getElementById("smsshare").href = "sms:&body=This is my Digital Business Card: " + window.location.href;
+        } else {
+            document.getElementById("smsshare").href = "sms:?body=This is my Digital Business Card: " + window.location.href;
         } 
     </script>
 
