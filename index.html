@@ -900,8 +900,10 @@
                                 <p>Art & Craft activities are entertaining and at the same time beneficial to children in many ways. It helps them with decision making abilities, improves concentration, boosts their self-confidence, increases their problem-solving abilities and also improve their academic performance.</p>
                                 <p>  <strong>What will students learn in this program</strong> 
                                     <ul>
-                                        <li>Students will learn fundamental drawing, painting, clay sculpting techniques and many creative crafts.</li>
+                                       <li>Students will learn fundamental drawing, painting, clay sculpting techniques and many creative crafts.</li>
+                                       
                                         <li>Every class, they will explore a variety of art media like Watercolours, Acrylics, Oil Pastels, Chalk, Color Pencils, Pen and ink, Clay, Collages and many more through age appropriate creative projects.</li>
+                                        
                                         <li>Students will be taught the elements of art and various art techniques through fun projects which they will cherish forever. (eg: colour theory, colour blending, creating texture, light and shade, perspectives, etc.) </li>
                                         <li>Every season, they will be introduced to the works of great artists and art practices from around the world to enrich their knowledge on art history and inspire them to create their own masterpieces.</li>
                                     </ul>
@@ -2134,7 +2136,22 @@
         }
     </script>
 
+<script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+        // Huawei Phone must come first because its UA also contains "Android"
+        if (userAgent.includes("HUAWEI")) {
+           alert("huawai");
+        } else if (userAgent.includes("Android")) {
+           alert("Android");
+        } else if (userAgent.includes("iPhone")) {
+            alert("Iphone");
+        } else {
+            //cant be sure about device, so redirect to home page
+            alert("other");
+        }
     </script>
+
 
     <script>
         let businessname = document.getElementById("businessname").innerHTML;
